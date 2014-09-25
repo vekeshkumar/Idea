@@ -1,0 +1,12 @@
+Question
+Sign in to vote
+1
+Sign in to vote
+I'm having this issue too, starting in safe mode is helping most of the time.  Below is a list to start each office application in safe mode from "run".  Note that this suggests the issue is caused by an add in.  However, I haven't installed any new add ins prior to this beginning.
+
+Type excel /safe and press Enter to start Excel 2013.
+Type outlook /safe and press Enter to start Outlook 2013.
+Type winword /safe and press Enter to start Word 2013.
+Type powerpnt /safe and press Enter to start PowerPoint 2013.
+Type mspub /safe and press Enter to start Publisher 2013.
+Type visio /safe and press Enter to start Visio 2013.

@@ -1,0 +1,6 @@
+Componentone
+telerik
+syncfusion
+xaml
+perpettum ui control
+callisto

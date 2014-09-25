@@ -1,0 +1,15 @@
+The (mostly) full list of what's new is up on MSDN in the page: What's New In Visual Studio 2013 Preview.
+
+From the .NET developer's perspective, highlights include:
+
+Automatic binding redirection support
+LOH compaction
+EventSource improvements
+Better overall performance.
+64bit Edit and Continue
+Better async debugging
+Call stack visualization
+Editor improvements
+Enhanced scrollbar functionality
+Inline Viewing of definitions
+Better XAML design time support

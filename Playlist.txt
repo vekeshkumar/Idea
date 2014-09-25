@@ -1,0 +1,5 @@
+PlaylistPlugin plugin = new PlaylistPlugin();
+plugin.Playlist = new ObservableCollection<PlaylistItem>(new[] { 
+        new PlaylistItem() { Source = new Uri("http://smf.blob.core.windows.net/samples/videos/bigbuck.mp4") },             
+        new PlaylistItem() { Source = new Uri("http://smf.blob.core.windows.net/samples/videos/wildlife.mp4") }, });
+player.Plugins.Add(plugin);

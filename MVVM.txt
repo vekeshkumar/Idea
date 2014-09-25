@@ -1,0 +1,192 @@
+
+1.Introduction
+
+2.Business Apps for WinRT
+	
+3.Windows Store apps / WinRT Terminology
+	
+Business Application Requirements
+	
+What is Prism for Windows Runtime?
+	
+What is Included in Prism for Windows Runtime?
+
+Demo: AdventureWorks Shopper Sample Solution Architecture
+	
+Demo: AdventureWorks Shopper Walkthrough
+	
+Prism for Windows Runtime vs Prism 4
+
+Summary
+
+Start playing at first clip Getting Started Building WinRT Apps with Prism
+		
+Introduction
+	
+MVVM and WinRT
+	
+Getting Started with a Prism App
+	
+Demo: Setting up your solution with Prism
+	
+Demo: Using the Prism MvvmAppBase class
+
+Demo: Basic MVVM with Prism
+
+ViewModelLocator
+	
+Demo: ViewModelLocator Hookup
+	
+Demo: Overriding ViewModelLocator Conventions
+	
+Summary
+	
+Start playing at first clip Commands and Dependencies
+	
+Introduction
+	
+Commands Overview
+	
+Commands and MVVM
+	
+Prism DelegateCommand
+	
+Demo: Commands Demo Setup
+	
+Demo: Hooking Up Commands
+	
+Demo: Passing Command Parameters
+	
+Managing Dependencies
+	
+Demo: Manual Dependency Injection in Prism
+
+IOC/DI Containers
+	
+Demo: Using and IOC/DI Container with Prism
+	
+Summary
+	
+Start playing at first clip Navigation and Application Lifecycle State Management
+	
+Introduction
+	
+WinRT Navigation Schemes
+	
+WinRT Navigation Objects
+	
+Commanding Navigation in Prism
+	
+Prism Navigation Aware ViewModels
+	
+Demo: Commanding and Participating in Navigation in ViewModels
+	
+Demo: Managing Event Subscriptions on Suspend
+	
+WinRT Application Lifecycle
+	
+WinRT Application State Management
+	
+Prism State Management
+	
+Demo: Using RestorableState on ViewModel Properties
+	
+Demo: Using ISessionStateService in Client-side Services
+	
+Summary
+	
+Start playing at first clip PubSubEvents and EventAggregator
+	
+Introduction
+	
+Loosely Coupled Communications
+
+EventAggregator Pattern
+	
+Demo: PubSubEvents Basics
+	
+Weak References
+	
+Demo: Using WeakReferences with PubSubEvents
+	
+Other EventAggregator Features
+	
+Demo: Thread Dispatching
+	
+Demo: Filtering Subscriptions
+	
+Summary
+
+Start playing at first clip Validation
+	
+Introduction
+	
+WPF and Silverlight Validation
+	
+WinRT Validation
+	
+Prism Validation Support
+	
+Demo: Supporting Validation on Model Objects
+	
+Demo: Implementing a Validation Display Behavior
+	
+Demo: Dislaying Validation Errors
+	
+Demo: Implementing Custom Validation Rules
+	
+Summary
+		
+Start playing at first clip Calling Web APIs
+	
+Introduction
+	
+WCF vs Web APIs
+	
+ASP.NET Web API
+	
+Consuming Web APIs
+	
+Demo: Data retrieval with Web APIs
+	
+Demo: Saving an Order with Web APIs
+	
+Web API Security
+	
+Demo: Windows Authentication with Web API
+	
+Demo: Forms Authentication with Web API
+	
+Performing Server Validation
+	
+Demo: Server Validation
+	
+Demo: Custom Business Logic Server Validation
+	
+Demo: AdventureWorks Shopper Service Validation
+	
+Summary
+	
+Start playing at first clip Leveraging WinRT Platform Features
+	
+Introduction
+	
+Search Charm
+	
+Demo: Search Charm
+
+Settings Charm
+	
+Demo: Settings Charm
+
+Flyout Views
+	
+Demo: Using Flyout Views
+	
+Live Tiles
+
+Demo: Supporting Live Tiles
+	
+Summary
+	
+Course Closing 

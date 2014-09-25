@@ -1,0 +1,12 @@
+ 12 down vote accepted
+	
+
+The Short answer: Yes, you can develop apps using HTML / CSS / Javascript. Take two WebView Tutorials and call me in the morning.
+
+The Long Answer: If you want to write apps for Android that use HTML / CSS / Javascript, you'll have to at least create a native WebView wrapper. This is relatively easy to do -- unless you want to hook into native functions, such as the accelerometer, camera, or even the Toast Messages (the little messages that pop up when something happens).
+
+Accessing the native hardware and software through a webview requires you to write a JavascriptAdapter (available in Android 2+), and define some custom Javascript methods in the JavascriptAdapter. Those methods map to a java function, which DOES have access to the native OS facilities.
+
+Frameworks such as Appcelerator and PhoneGap do exactly this, except they've already written the javascript functions for you, so it saves you from having to write those yourself.
+
+In that sense, if you're going to write an app for Android using HTML / CSS / Javascript, it makes sense to use a framework. Otherwise, you're doing that work yourself.

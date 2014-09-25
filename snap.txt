@@ -1,0 +1,15 @@
+  <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape">
+                   
+                </VisualState>
+                <VisualState x:Name="FullScreenPortrait" />
+                <VisualState x:Name="Filled">
+                   
+                </VisualState>
+                <VisualState x:Name="Snapped">
+    
+                </VisualState>
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>

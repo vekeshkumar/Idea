@@ -1,0 +1,182 @@
+using System.Net.NetworkInformation;
+using System.Threading;
+using System.Diagnostics;
+
+static class Module1
+{
+
+
+    private static List<Ping> pingers = new List<Ping>();
+    private static int instances = 0;
+
+    private static object @lock = new object();
+
+    private static int result = 0;
+    private static int timeOut = 250;
+
+    private static int ttl = 5;
+
+    public static void Main()
+    {
+        string baseIP = "192.168.1.";
+        int classD = 1;
+
+        Console.WriteLine("Pinging 255 destinations of D-class in {0}*", baseIP);
+
+        CreatePingers(255);
+
+        PingOptions po = new PingOptions(ttl, true);
+        System.Text.ASCIIEncoding enc = new System.Text.ASCIIEncoding();
+        byte[] data = enc.GetBytes("abababababababababababababababab");
+
+        SpinWait wait = new SpinWait();
+        int cnt = 1;
+
+        Stopwatch watch = Stopwatch.StartNew();
+
+        foreach (Ping p in pingers) {
+            lock (@lock) {
+                instances += 1;
+            }
+
+            p.SendAsync(string.Concat(baseIP, cnt.ToString()), timeOut, data, po);
+            cnt += 1;
+        }
+
+        while (instances > 0) {
+            wait.SpinOnce();
+        }
+
+        watch.Stop();
+
+        DestroyPingers();
+
+        Console.WriteLine("Finished in {0}. Found {1} active IP-addresses.", watch.Elapsed.ToString(), result);
+        Console.ReadKey();
+
+    }
+
+
+    public static void Ping_completed(object s, PingCompletedEventArgs e)
+    {
+        lock (@lock) {
+            instances -= 1;
+        }
+
+        if (e.Reply.Status == IPStatus.Success) {
+            Console.WriteLine(string.Concat("Active IP: ", e.Reply.Address.ToString()));
+            result += 1;
+        } else {
+            //Console.WriteLine(String.Concat("Non-active IP: ", e.Reply.Address.ToString()))
+        }
+
+    }
+
+
+    private static void CreatePingers(int cnt)
+    {
+        for (int i = 1; i <= cnt; i++) {
+            Ping p = new Ping();
+            p.PingCompleted += Ping_completed;
+            pingers.Add(p);
+        }
+    }
+
+    private static void DestroyPingers()
+    {
+        foreach (Ping p in pingers) {
+            p.PingCompleted -= Ping_completed;
+            p.Dispose();
+        }
+
+        pingers.Clear();
+
+    }
+
+}
+
+
+
+2.
+private static void StartClient() {
+        // Connect to a remote device.
+        try {
+            // Establish the remote endpoint for the socket.
+            // The name of the 
+            // remote device is "host.contoso.com".
+            IPHostEntry ipHostInfo = Dns.Resolve("host.contoso.com");
+            IPAddress ipAddress = ipHostInfo.AddressList[0];
+            IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
+
+            // Create a TCP/IP socket.
+            Socket client = new Socket(AddressFamily.InterNetwork,
+                SocketType.Stream, ProtocolType.Tcp);
+
+            // Connect to the remote endpoint.
+            client.BeginConnect( remoteEP, 
+                new AsyncCallback(ConnectCallback), client);
+            connectDone.WaitOne();
+
+            // Send test data to the remote device.
+            Send(client,"This is a test<EOF>");
+            sendDone.WaitOne();
+
+            // Receive the response from the remote device.
+            Receive(client);
+            receiveDone.WaitOne();
+
+            // Write the response to the console.
+            Console.WriteLine("Response received : {0}", response);
+
+            // Release the socket.
+            client.Shutdown(SocketShutdown.Both);
+            client.Close();
+
+        } catch (Exception e) {
+            Console.WriteLine(e.ToString());
+        }
+    }
+	3.
+	
+	 public static void NetPing()
+    {            
+        Ping pingSender = new Ping();
+        foreach (string adr in stringAddressList)
+        {
+           IPAddress address = IPAddress.Parse(adr);
+           PingReply reply = pingSender.Send (address);
+
+           if (reply.Status == IPStatus.Success)
+           {
+                //Computer is active
+           }
+           else
+           {
+                //Computer is down
+           }
+        }  
+    }
+	4.
+	public static bool Ping ( string url )
+{
+WebRequest r = WebRequest.Create(url);
+try
+{
+r.GetResponse();
+return true;
+}
+catch
+{
+}
+return false;
+}
+Please submit slide with following details.
+   i.      Title
+  ii.      Objective and Motivation
+  iii.      Background and related work
+  iv.      Existing system workflow - How it works today
+  v.      Proposed system workflow - What new you wish to implement. Progress done so far.
+ vi.      Hardware and Software used (if any)
+vii.      Time chart indicating your project work details.
+viii.      References (associated with the project)
+  ix.      Conclusions

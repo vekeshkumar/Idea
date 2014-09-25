@@ -1,0 +1,11 @@
+Core = FB4WR-32NVD-4RW79-XQFWH-CYQG3
+Professional = XKY4K-2NRWR-8F6P2-448RF-CRYQH - retail key
+ProfessionalWMC = RR3BN-3YY9P-9D7FC-7J4YF-QGJXW (Upgrade only, can't be used on WinPE) - retail key for Windows Media Center 
+
+Volume
+gvlkCore=BN3D2-R7TKB-3YPBD-8DRP2-27GG4
+gvlkProfessional=NG4HW-VH26C-733KW-K6F98-J8CK4
+gvlkProfessionalWMC=GNBB8-YVD74-QJHX6-27H4K-8QHDG 
+
+These keys are just for installing windows 8 
+They not activate windows 8

@@ -1,0 +1,61 @@
+catch (AggregateException aggregateException)
+{
+aggregateException
+.InnerExceptions
+.Where(item => item is ArgumentOutOfRangeException)
+.ToList() /* Contains ArgumentOutOfRangeException */
+.ForEach(age => Console.WriteLine(age.Message));
+}
+
+ STPStartInfo startInfo = new STPStartInfo();
+            startInfo.MaxWorkerThreads = 20;
+            startInfo.MinWorkerThreads = 10;
+            smart=new SmartThreadPool(startInfo);
+            smart.Start();
+            Thread thread = new Thread(work) { IsBackground = true };
+            
+            Console.WriteLine(count);
+            Console.ReadLine();
+        }
+        public static SmartThreadPool smart;
+        private static void work()
+        {
+            WorkItemCallback wr;
+            
+                IWorkItemsGroup  workItemsGroup= smart;
+                try
+                {
+                    for (int i =8000; i < 8100; i++)
+                    {
+                        workItemsGroup.QueueWorkItem(wr = (WorkItemCallback)DoWork(i));
+                    }
+                    
+                }
+                catch (ObjectDisposedException e)
+                {
+                   
+                }
+            
+        }
+
+        private static object DoWork(int port)
+        {
+            Console.WriteLine(port);
+            try
+            {
+
+                TcpClient tcp = new TcpClient();
+                tcp.Connect("172.16.20.1", port);
+
+                Console.WriteLine(port);
+                tcp.Close();
+
+
+            }
+            catch
+            {
+              
+            }
+            return null;
+
+        }

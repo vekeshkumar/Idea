@@ -1,0 +1,18 @@
+Method 1 : Remove Hibernate
+
+As from our last post, why your hard drive is always shrinking even though you did not do anything, we talked about using the freeware TreeSize to view where you have the largest chunk of data on your hard drive. If you look deep enough you will found out that there are two files called pagefile.sys and hiberfil.sys that occupy over few GB of hard drive space. If you are the kind person that does not use Hibernate then this article is for you.
+
+When you turn off your computer using hibernate, the operating system needs to store all your current running program states onto hard disk so that programs can resume where they left off when you power up your PC again. To achieve this, the OS need to save all the information into a file called hiberfil.sys. Windows OS (7, vista, XP) usually stores this as a hidden file under your C directory or your main OS partition.
+[ad#In Post]
+
+So if you never use hibernate, than its time for you to get your hard drive space back.
+
+[Note: Hibernate mode is not sleep mode. When hibernating your computer completely shuts down, however, under sleep mode your PC is not completely shut down; it still consumes a small amount of power.]
+
+The best way to delete hiberfil.sys or disable hibernate:
+
+    Go to Start menu, type “cmd” open up command prompt
+    Type “powercfg.exe -h off” [make sure you are an Administrator]
+    ENTER
+    Type “exit”
+    ENTER

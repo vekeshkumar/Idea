@@ -1,0 +1,5 @@
+Hi Praba, as mentioned in the article, 
+using DotFuscator Professional makes it difficult to read "reverse engineered" code.
+ Please note the article states
+ DotFuscator CE (Community Edition) is available free of charge 
+ but the Professional edition offers more security.

@@ -1,0 +1,108 @@
+dolphin 
+webkit
+mozilla-kit
+Presto until 12.16
+Blink from 15.0
+ucweb
+
+Another way to ask the question is what kind of support does a browser need? The short list is:
+
+    Support for parsing (needed to make sense of [X]HTML, CSS, and [ECMA/Java]Script)
+    Tree walking/interpreting features (part of parsing and building UI)
+    Support for accelerated graphics
+    Fast networking
+    For the more advanced browsers: control over processes and isolating memory between pages
+    Must work on all supported platforms
+
+Most languages have some sort of parsing support. You have parser generators for C, C++, C#, Java, etc. However, C and C++ have quite a few years head start on the rest of the alternatives so the algorithms and implementations are more mature. Accessing accelerated graphics in Java is a no go, unless you have some native extensions to make it work. WPF on C# provides access to accelerated graphics, but it is too new to have a serious browser built with the technology.
+
+Networking is actually the least of the reasons to choose C++ over Java or C#. The reason is that communication is many times slower than the rest of the processing that goes on to display the page. The raw speed of the wire is the limiting factor. Both Java and C# have non-blocking IO support, as does C++. So there really is no clear winner in this area.
+
+Why not Java? Have you ever tried to build a UI with Java? It feels cumbersome and slow compared to anything else out there, because it is. No accelerated graphics is also a big negative here. Java's sandboxing is really good, and can help improve the security of a browser if it is used correctly, but it is a pain to configure and make work. Not to mention the graphics format support lags behind most modern browsers.
+
+Why not C#? If your only target is Windows, C# might actually make a good representation. The problem comes when you want to support anything other than Windows. Mono hasn't caught up enough to be considered cross platform enough for this task--particularly with accelerated graphics support and WPF. Who knows how long that will take to change.
+
+Why not C? There's a C compiler for just about every platform out there (including embedded devices). However, there's a lot that C does not do for you that you will have to be extra vigilant about. You have access to all the lowest levels of the APIs, but the majority of C developers don't do GUIs. Even the C GUI libraries are written in an object oriented manner. As soon as you start talking UI, an object oriented language starts making better sense.
+
+Why not Objective C? If your only target is Apple, it makes a lot of sense. However, most developers don't know Objective-C, and the only reason to learn it is to work on NeXT or Apple boxes. Sure you can use any C library with Objective-C, and there are compilers for many platforms, but finding people to work on it will be a touch more difficult. Who knows? Maybe Apple can turn this perceived deficiency around.
+
+Why C++? There's a C++ compiler for just about every platform out there. Almost every GUI library has a C++ interface, sometimes it's better and sometimes it's just different. For example, Microsoft's ATL is a lot better than win32 C function calls or even the MFC library. There's C++ wrappers for GTK on Unix, and I'd be surprised if someone didn't have a C++ wrapper around Apple's Objective-C GUI library. Process management is easier within C++ than Java or C# (those details are abstracted away for you). It's perceived speed comes more from hardware acceleration than it does raw performance. C++ does take care of more things for you than raw C (such as bounded strings), but still gives you freedom to tweak things. Not to mention a number of libraries needed to render web pages are also written in C or C++.
+
+For the time being, C++ does edge out the alternatives.
+
+
+ 64 down vote
+	
+
+I've decided to write a novel about this in hopes that people will gloss over it and upvote me. No, no, just kidding! I suffered over every word. Every word, I tell you!
+Ask 'when' before 'why'
+
+All major web browsers can trace their origins back to the 90s. Konqueror became Safari and Chrome; Netscape became Firefox; IE and Opera are still IE and Opera. These browsers all have a 15 year head start on incumbents.
+
+I suggest you even try to name an acceptable cross-platform (Windows/Mac/Unix and even worse) language that was available in around 1995 when modern browsers originated. To build the core in anything but C/C++, you'd probably have had to build or buy and modify a compiler and platform libraries.
+How about today? What are the alternatives?
+
+Just for fun, let's think about the problem today. Yes, there are alternatives, but there are still major problems.
+
+Language choice presents at least these problems:
+
+    Knowledge problems - Hiring/training developers or attracting contributors
+    Organizational/social problems - Language acceptance
+    Language implementation: Speed, platform support, tooling
+    Language power
+
+1: Knowledge problems
+
+Where do you get people who know the language or can learn it? This is an obstacle for languages like OCaml, F#, Haskell, Common Lisp and D that are fast and high-level enough to write a browser in nicely, but have few followers (In the 10k-100k range, maybe) even if you liberally count all the hobbyists and academics.
+2: Social/Organizational problems
+
+Corollary to the cargo-cult answer above:
+
+    An open source browser not using C, C++, C# or Java will supposedly have difficulty with contributors.
+    A proprietary browser not using C, C++, C# or Java will get project managers severely yelled at in most organizations.
+
+3. Technical problems
+
+Even in modern times, you need a fairly fast language for the computation intensive parts of rendering pages and running Javascript. You can choose to supplement that with a high-level language for building GUI elements, etc. (e.g. the Firefox approach of C++ and Javascript) but you have to have close integration between the languages; you can't just say "Okay, C# and Lua." You'll probably have to build and debug that bridge yourself unless you choose C or C++ as the base language.
+
+Cross-platform development is another bag of worms. You could use C# or F# and cross your fingers on GTK# and Mono being alive and well in the future. You could try Common Lisp, Haskell, OCaml... Good luck getting everything working on Windows and Mac and Linux.
+4. Language Power
+
+After all of that, you have to build an enormous amount of functionality, so if you choose a low-level language you need an even huger army of coders than before. Note that no one has really built a browser from scratch in about fifteen years. That's partly because (surprise!) it's hard.
+
+Specifically, having a Javascript interpreter is problem 3 (acquire one) or problem 4 (build one).
+Conclusion:
+
+If you developed a three-platform (Windows/Mac/*nix) browser today (early 2011), what are some of the choices?
+
+    C: See (2). Everyone's going to clamor for C++. Have fun selecting a cross-platform toolkit or building one (1, 2, 3 and 4). See also (4); have fun building a stable, secure browser in it.
+    C++: Have fun selecting a cross-platform toolkit or building one (1, 2, 3 and 4). Have fun (4) building stable, secure browser in it.
+    C or C++ and HLL: Your best bet. Pick your poison on the dynamic language; See (1) and (2). Too many good languages, too few followers of each. (1, 2, 3 and 4) on toolkit.
+    Java: Second best bet, if you have to please middle management. See (4); building huge things in Java takes a lot more code than in anything else on this list but maybe C.
+    Scala: Beats Java on (4); (1) and (2) but it's catching on.
+    C and Javascript: As a special case, this is appealing because you already have to build or acquire and assimilate Javascript interpreter. (Hence Firefox.) (1, 2, 3 and 4) on toolkit; the Mozilla people built their own IIRC.
+    C#: Have fun on (3). You're probably stuck with GTK#, however good that is, or building your own layer and renderer above GTK# and Windows Forms.
+    Ruby/Python/Perl/Racket/Lua/Erlange etc.: You've got (3) on cross-platform widget libraries and speed. Moore's law is with you on (4); the growing demand on browsers is against you.
+    OCaml, Haskell, Common Lisp, Smalltalk: (1) and (2) in spades. No speed issues, probably, but (3) for cross-platform development, and you'll have to build your own everything or bridge to C/C++ libraries somehow.
+    Objective-C: (3) I'm not sure how cross-platform development would work out here.
+
+If we see another major browser rise in the next few years, I would bet it will be written in C or C++ and a dynamic language (Like Firefox), whether open source or proprietary.
+
+Edit (July 31, 2013): Commenters on Hacker News seem to be mentioning Rust and Go (not specifically in connection with my answer), which fall vaguely into the "miscellaneous fast" bucket. Trying to keep this list of languages egalitarian and up to date will be a losing battle, so instead I'm calling it a representative sample as of the time of writing and leaving it alone
+
+
+ down vote
+	
+History
+
+Each of the browsers has some history that influenced the choice of language.
+
+For example, both Chrome and Safari are based on WebKit, which has its origins in the KDE project's KHTML part. KDE originally was created (in part) as a demonstration of the Qt GUI toolkit, so KDE is, overall, a C++ project. All new KDE projects were, at the time, written entirely in C++, so it was a logical choice for KHTML. It has since been ported to use other GUI toolkits.
+
+Opera's Presto engine was written with performance and a small binary size in mind: C++ was the logical choice.
+
+Microsoft's IE was written as a collection of ActiveX components, which could have been written in any language that has COM bindings, but was likely written in a subset of C++, because the majority of their codebase is already written in that language.
+
+Netscape's Mozilla was written in C++ likely because portability was a major concern of theirs. C and C++ compilers are (virtually) ubiquitous, and so it was a logical choice.
+
+There's no inherent technical reason for these choices. It just "seemed like a good idea at the time."

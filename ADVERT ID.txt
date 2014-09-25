@@ -1,0 +1,7 @@
+
+Application ID:
+2e1ca766-6bdd-4935-a757-7edf61db7fbf
+Ad Unit ID:
+10151046
+
+avi,m4a,m4v,mp4v,mp4,mov,3g2,3gp2,3gp,3gpp,m2ts,asf,wm,wmv,wma,wma,aac,adt,adts,mp3,wav,ac3,ec3.

@@ -1,0 +1,541 @@
+abduct v 
+abomination n 
+abstract adj  general 
+absurd adj 
+accusation n 
+accuse v 
+acquaintance n 
+adjunct n 
+admire v 
+adopted adj  child 
+adorable adj 
+adore v  love 
+aerial n 
+affair n  matter 
+agitate v  make less calm 
+alibi n 
+allegation n 
+allergic adj 
+ally n 
+ambush v 
+amendment n 
+amity n 
+amuse v 
+analogy n 
+anatomy n 
+ancestor n 
+annihilate v 
+anomaly n 
+anticipate v 
+antics n 
+antique n 
+anxiety n  worry 
+apocalypse n 
+apprehend v  catch 
+arcade n 
+arrogant adj 
+assault n 
+assessment n 
+asset n 
+astound v 
+audacity n 
+authentic adj 
+avert v  prevent 
+awful adj  bad 
+awfully adv  badly 
+awkwardly adv  embarrassed 
+awry adj 
+barge v 
+barren adj 
+bend v  accept 
+blabber v 
+bond v  make connection 
+bound adj  certain 
+brag v 
+brief adj  short in time 
+brittle adj  easily broken 
+brood v 
+broody adj  worried 
+bully n 
+bully v 
+bump v  hit 
+bust v  break 
+butcher n  murder 
+candour n 
+cartel n 
+casualty n  injured 
+catastrophe n 
+catch v  take hold 
+cavalry n 
+cemetery n 
+certainly adv  in no doubt 
+chatter v  talk/noise 
+chirp v 
+closet n 
+clumsy adj 
+cocky adj 
+coddle v  protect 
+combat n 
+commence v 
+compassion n 
+compelled adj 
+complexion n  face 
+comply v 
+compulsion n  want 
+con v 
+conceal v 
+concede v 
+conceive v  become pregnant 
+concert n 
+concierge n 
+confess v 
+confiscate v 
+conjure sth up v  think of 
+conjure v 
+conk v 
+conquer v 
+considerable adj 
+consideration n  careful thinking 
+consistent adj  not changing 
+conspiracy n 
+constitutional adj  health 
+consummate adj 
+contestant n  competition 
+contradict v 
+convention n  meeting 
+convict v 
+convincing adj 
+corps n  military unit 
+coupling n 
+covert adj 
+covertly adv 
+covetous adj 
+craft n  skill 
+crave v 
+crippled adj, at cripple (v)
+crisis n 
+crooked adj  bent 
+crucial adj 
+crumble v 
+crusade n 
+cuddle v 
+culprit n 
+curious adj  interested 
+curse v  speak angrily 
+dabble v  try 
+darn v 
+dauntless adj 
+dawn n 
+debutante n 
+decease n 
+deceive v 
+deduce v 
+defame v 
+defiance n 
+defining moment n 
+defy v 
+deliberate adj 
+delusion n 
+demented adj 
+demolition n, at demolish (v)
+depleted adj 
+deport v 
+depression n  unhappiness 
+deserter n 
+deserve v 
+desire v  want 
+desperate adj  risky 
+desperate adj  serious 
+desperate adj  wanting 
+despise v 
+despite prep 
+detach v 
+determination n  trying hard 
+devastated adj  destroyed 
+devour v 
+diabolical adj 
+diligent adj 
+dipstick n  measure 
+disperse v 
+disposable adj 
+dissect v 
+dissolution n 
+divine adj  god-like 
+dogging n 
+doofus n 
+drab adj 
+dramatic adj  exciting 
+drastic adj 
+dread v 
+drifter n 
+drought n 
+duly adv 
+dwell on sth v 
+electrostatic adj 
+elusive adj 
+embargo n 
+embarrassing adj 
+embezzle v 
+empathy n 
+empowering adj 
+endowment n 
+enthusiast n 
+enthusiastic adj 
+entreat v 
+enunciate v  pronounce 
+erudite adj 
+escalate v 
+escrow n 
+evict v 
+excavator n 
+expedite v 
+exploit v  use unfairly 
+exterminate v 
+extort v 
+extortion n, at extort (v)
+fame n 
+famished adj 
+fascinating adj 
+fence n  criminal 
+ferry n 
+filthy adj  dirty 
+flatter v 
+flatulence n 
+flick v 
+flinch v 
+floor v  surprise/confuse 
+flu n 
+forge v  copy 
+forte n 
+foster v  take care of 
+frame v  make guilty 
+fraternity n  group 
+freak n  strange 
+fritter n 
+frivolous adj 
+frostbite n 
+frown v 
+frustrating adj 
+frustration n  feeling 
+fugitive n 
+furious adj  angry 
+furrowed adj 
+fury n 
+gag n  piece of cloth 
+gangrene n 
+gangster n 
+garage n  cars 
+gazette n 
+gibberish n 
+glimmer n  sign 
+glimpse v 
+gloomy adj  without hope 
+glower v 
+glue n 
+gobble v  eat 
+goer n 
+goggle v 
+gooey adj 
+goof n  person 
+goosebumps n 
+grief n 
+grievance n 
+grieving adj 
+grocery n  food 
+grope v 
+grumpy adj 
+guilt n  feeling 
+guilty adj  feeling 
+half-assed adj 
+hallucinate v 
+hallucination n 
+hangover n  illness 
+hazy adj  memory 
+hazy adj  weather 
+hideous adj 
+hilarious adj 
+hooligan n 
+hooliganism n, at hooligan (n)
+horny adj  sexual 
+horrific adj 
+hound v 
+howling adj 
+hum v 
+humiliate v 
+ignorant adj 
+imitate v 
+impeccable adj 
+impediment n 
+impersonate v 
+implant v  object 
+imply v 
+impulsive adj 
+inappropriate adj 
+incarcerate v 
+incentive n 
+inclined adj 
+incursion n 
+inexplicable adj 
+inferiority complex n 
+infiltrate v 
+inflict v 
+infringe v 
+inquisition n 
+insinuating adj 
+insist v 
+instinct n 
+insulin n 
+intact adj 
+intense adj 
+intercept v 
+intervene v  get involved 
+intimidate v 
+intrigue v 
+irrelevant adj 
+jack the lad n 
+jeopardize v 
+jeopardy n 
+lame adj  not satisfactory 
+lattice n 
+lawn n 
+legacy n 
+lend v  give 
+liability n  responsibility 
+liable adj  responsible 
+loony adj 
+loyalty n 
+lunacy n 
+macabre adj 
+maniac n  strong interest 
+manicure n 
+manifesto n 
+manipulate v  influence 
+marijuana n 
+massive adj 
+mentor n 
+mentor v 
+mercenary adj 
+mercenary n 
+merger n 
+mess n  dirt/untidiness 
+messy adj  dirty/untidy 
+meteor n 
+migraine n 
+mimic v 
+miniature adj 
+misery n  unhappy feeling 
+mist n 
+mist v 
+mistress n  woman in control 
+mocking adj 
+monastery n 
+morbid adj 
+mumble v 
+munitions n 
+nagging n 
+nail n  metal 
+naive adj 
+napalm n 
+negligence n 
+niche n  position 
+noose n 
+norm n 
+nuptial adj 
+nurture v  help develop 
+obituary n 
+obligation n 
+obscure adj  not known 
+obsessed adj 
+obsessive-compulsive disorder n 
+officiate v 
+ostracize v 
+ounce n 
+outrage v 
+outrageous adj 
+overstep v 
+overwhelm v  emotion 
+pacific adj 
+pacifist n 
+pageant n 
+pall n  cloud 
+paranoia n 
+paranoid adj 
+paranormal adj 
+parole n 
+passionate adj 
+passive adj  behaviour 
+pasty n 
+pathetic adj  sad 
+peculiar adj  strange 
+perimeter n 
+perished adj 
+perjury n 
+perk n 
+perpetrator n 
+perplex v 
+persist v 
+persistence n 
+persuasive adj 
+pertinent adj 
+pervert v 
+petition n 
+petty adj 
+pimp n 
+platitude n 
+plead v  request 
+ponder v 
+pony n  animal 
+possessed adj  owning 
+possession n 
+potential n 
+potholder n 
+prank n 
+prick n  man 
+pride n  satisfaction 
+prior adj  earlier 
+priority n 
+pristine adj 
+probation n 
+promptly adv 
+proposition n 
+proprietor n 
+prosecution n  legal 
+prospect n  possibility 
+prosperous adj 
+provoke v  cause reaction 
+proximity n 
+puke v 
+puppet n 
+purse n  container 
+pursue v  follow 
+pursuit n  activity 
+rage n  anger 
+ransom n 
+rat on sb/sth v 
+reap v 
+reassess v 
+rebel n 
+rebound v 
+reckoning n 
+reconcile v 
+redneck n 
+refinery n 
+reflex n 
+regard v 
+reinforcement n 
+rejuvenate v 
+relay v 
+relic n 
+reluctant adj 
+remedy n 
+reminisce v 
+rendezvous n 
+renounce v 
+repellent n 
+repudiate v 
+reputation n 
+resemblance n 
+resist v 
+retainer n 
+rid adj 
+rile v 
+rivalry n 
+ruin v 
+rupture v 
+rusty adj  metal 
+sabotage v 
+scarper v 
+scavenge v 
+scoot v 
+scorch v  burn 
+screwed up adj, at screw sb up (v)
+sedate adj 
+sedative n 
+seduce v  attract 
+seduce v  persuade 
+seductive adj  persuading 
+seize v 
+self-pity n 
+separatist n 
+shabbiness n, at shabby (adj)
+shack n 
+shrink v  become smaller 
+slaughter n 
+slob n 
+snatcher n 
+sneak v  move secretly 
+sneaky adj 
+sneeze v 
+snitch v  tell secretly 
+snore v 
+sober adj  not drunk 
+spanking adj 
+spawn v  start 
+speculation n  guess 
+spike v  make stronger 
+splash-down n 
+spleen n  organ 
+spook n  spirit 
+spooky adj 
+squander v 
+stammer v 
+stash v 
+stonewall v 
+stooge n 
+stranglehold n 
+stumble v  walk 
+subtle adj 
+sue v 
+summon v  order 
+superiority complex n 
+suppository n 
+susceptible adj  influenced 
+swear v  use rude words 
+sweep v  move 
+swindle v 
+swoop v 
+sympathize v  understand 
+sympathy n  understanding 
+tactical adj 
+tantrum n 
+taunt v 
+temper n 
+tenant n 
+terrible adj  unpleasant 
+the rudiments n 
+therapy n 
+thrive v 
+throb v 
+ticklish adj  skin 
+toast n  bread 
+torment n 
+trance n  mental condition 
+transcript n 
+transgression n, at transgress (v)
+translation n 
+traumatic adj 
+tread v 
+unflinching adj 
+unleash v 
+vague adj 
+vengeful adj 
+vent n  express feelings 
+vent v 
+verge n 
+vicinity n 
+vie v 
+vital adj  important 
+vouch v 
+vow v 
+wager n 
+waltz n 
+weirdo n 
+whine v 
+wind-up n, at wind sb up (v)
+wire-tapping n 
+wonder v  question 
+wrangle n 
+wrath n 
+wuss n 
+yap v 
+yonder det 

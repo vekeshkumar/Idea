@@ -1,0 +1,17 @@
+Idea 1 :
+Date : 28.7.2013
+Time : 11.45 am
+
+Increase the efficiency on access data in site by providing powerful downloading feature to the user by giving all the data's freely as well as collaborate.
+
+ remove cursor icon
+  
+ make collection selected item as selected list
+ 
+ acknowlegde the progress of task
+ 
+ keyboad shortcuts
+ 
+ 
+ 
+ 

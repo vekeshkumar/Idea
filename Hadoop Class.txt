@@ -1,0 +1,61 @@
+HBASE
+
+$ hbase master start
+hive>
+create 'table':'refer'
+put 'table','row1','refer:name','bmw'
+scan table
+list //to list all table
+
+PIG
+
+grunt> A= LOAD 'pig' using PigStorage(',') AS(id:int,name:chararray);  
+grunt> B = FILTER A by id!=3;
+grunt> C = GROUP B by id; 
+grunt> dump C
+grunt> D = FOREACH C GENERATE group , MAX(B.id);
+grunt> dump D;
+Illustrate D;
+
+HIVE CLI
+
+[training@localhost ~]$ cat>sample
+1:praba:chennai:pass
+2:sam:chennai:pass
+3:moulish:chennai:pass
+4:jothi:chennai:pass
+5:praveen:chennai:pass
+[training@localhost ~]$ hadoop fs -put sample sample
+
+hive> create table vitcsampletable(id int,name string,city string)
+    > row format delimited                                        
+    > fields terminated by ':';                                   
+OK
+Time taken: 2.124 seconds
+hive> load data inpath "sample" into table vitcsampletable;
+Loading data to table default.vitcsampletable
+OK
+Time taken: 2.279 seconds
+hive> select * from vitcsampletable where city='chennai';
+
+create EXTERNAL TABLE dat(id int,name string,result string)
+row format delimited                                         
+fields terminated by '@'                                     
+LOCATION '/user/praba/';  //to store the data into another directory;
+
+
+
+hive> create external table phani(id int, name string,top string)
+    > row format delimited                                       
+    > fields terminated by ','                                   
+    > 
+    > location '/user/praba/mylocation';                         
+OK
+Time taken: 0.049 seconds
+hive> load data inpath "top" into table phani;
+Loading data to table default.phani
+OK
+Time taken: 0.178 seconds
+
+
+

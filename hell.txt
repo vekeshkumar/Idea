@@ -1,0 +1,8 @@
+learn diskpart.................................\
+diskpart
+ The Diskpart Command can achieve the goal by the following steps.
+
+    Step 1: click "Start", and input "diskpart" in the searching box.
+    Step 2: input "list disk", and then select the disk you want to convert by typing "select disk x"
+    Step 3: input "list partition", and then select the existing partitions and delete all of them by typing "delete partition x" command.
+    Step 4:: input ''"convert gpt".

@@ -1,0 +1,14 @@
+Unhandled Exception: System.InvalidCastException: Null object cannot be converte
+d to a value type.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvid
+er provider)
+   at Newtonsoft.Json.Linq.Extensions.Convert[T,U](T token)
+   at Microsoft.Hadoop.WebClient.WebHCatClient.WebHcatMapReduceStreamingExecutor
+.Execute(Boolean throwOnError)
+   at Microsoft.Hadoop.MapReduce.Execution.Hadoop.StreamingJobExecutorBase.Execu
+te(Type mapperType, Type reducerType, Type combinerType, HadoopJobConfiguration
+config)
+   at Microsoft.Hadoop.MapReduce.Execution.Hadoop.StreamingJobExecutorBase.Execu
+te[TMapper,TReducer](HadoopJobConfiguration config)
+   at Hadoop.Json.Main(String[] args) in c:\Users\PrabaKarthi\Documents\Visual S
+tudio 2013\Projects\Hadoop\Hadoop\Json.cs:line 33
