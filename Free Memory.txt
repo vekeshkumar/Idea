@@ -1,13 +1,16 @@
 installer
-instaler/$patchcache$
-software distribution
+1.windows/instaler/$patchcache$
+2.windows/software distribution
 no program data
-delete hidden hibernate file
-move page file
-temp
+AppData
+3.delete hidden hibernate file
+4.move page file
+5.temp
+6.Disk CleanUp
+7.Delete Restore Points
+8.Defragmentation
 
-Kcaroze pass:1014
-
+Kcaroze pas
 ettique
 net start sshd
 on call support
