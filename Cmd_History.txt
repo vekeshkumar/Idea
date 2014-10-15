@@ -1,0 +1,11 @@
+DOSKEY /history
+python manage.py
+python manage.py sql
+python manage.py sql frame
+python manage.py sql
+python manage.py sql frame
+python manage.py syncdb
+python manage.py makemigrations
+python manage.py makemigrations frame
+python manage.py syncdb
+python manage.py sql frame
