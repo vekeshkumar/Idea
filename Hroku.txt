@@ -1,0 +1,7 @@
+ 1  heroku login
+ 2  git add *
+ 3  git commit -am "upload"
+ 4   heroku git:remote -a webproxyserver
+ 5   git push heroku master
+ 6  history
+ssh -v git@github.com -p 443

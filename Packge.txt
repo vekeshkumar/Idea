@@ -1,0 +1,13 @@
+Azure
+Modulus.io
+Appfog
+Heroku
+Mongolab
+Bower
+Dropper
+NPM
+Package
+Composer
+Appcoda
+tympanus.net
+sitepoint.com
