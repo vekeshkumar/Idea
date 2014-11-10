@@ -1,0 +1,7 @@
+git init
+git add *.*
+git add -a
+git commit -m 'first commit'
+git remote add origin url
+git push origin master
+git push -f
