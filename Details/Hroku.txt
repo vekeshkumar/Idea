@@ -4,4 +4,18 @@
  4   heroku git:remote -a webproxyserver
  5   git push heroku master
  6  history
-ssh -v git@github.com -p 443
+
+heroku keys:add
+
+node.js
+PATH=vendor/node/bin:bin:node_modules/.bin:$PATH
+
+heroku config:set NODE_ENV=production
+
+"scripts": {
+  "start": "node index.js",
+  "test": "mocha",
+  "postinstall": "bower install && grunt build"
+}
+
+ cat Procfile
