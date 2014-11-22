@@ -1,6 +1,10 @@
 Componentone
 telerik
 syncfusion
-xaml
+infrigistics
+wpf toolkit xaml
+dev express
 perpettum ui control
 callisto
+
+softarchive.net
