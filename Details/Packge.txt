@@ -11,3 +11,4 @@ Composer
 Appcoda
 tympanus.net
 sitepoint.com
+http://mashable.com/
