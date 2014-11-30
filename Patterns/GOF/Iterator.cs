@@ -27,7 +27,7 @@ namespace DoFactory.GangOfFour.Iterator.RealWorld
             collection[8] = new Item("Item 8");
 
             // Create iterator
-            Iterator iterator = new Iterator(collection);
+            Iterator iterator = collection.CreateIterator();
 
             // Skip every other item
             iterator.Step = 2;

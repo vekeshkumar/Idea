@@ -28,7 +28,7 @@ namespace DoFactory.GangOfFour.Proxy.RealWorld
     }
 
     /// <summary>
-    /// The 'Subject interface
+    /// The Subject interface
     /// </summary>
     public interface IMath
     {

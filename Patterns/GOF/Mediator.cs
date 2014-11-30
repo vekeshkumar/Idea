@@ -31,6 +31,7 @@ namespace DoFactory.GangOfFour.Mediator.RealWorld
             chatroom.Register(Yoko);
 
             // Chatting participants
+            
             Yoko.Send("John", "Hi John!");
             Paul.Send("Ringo", "All you need is love");
             Ringo.Send("George", "My sweet Lord");
