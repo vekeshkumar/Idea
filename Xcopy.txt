@@ -1,0 +1,14 @@
+
+To copy a file:
+
+XCOPY C:\utils\MyFile D:\Backup\CopyFile
+
+To copy a folder:
+
+XCOPY C:\utils D:\Backup\utils /i
+
+To copy a folder including all subfolders.
+
+XCOPY C:\utils\* D:\Backup\utils /s /i
+
+The /i defines the destination as a folder.
