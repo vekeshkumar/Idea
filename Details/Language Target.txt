@@ -1,0 +1,32 @@
+Data Structure , Design Pattern , Networking , Language Basics
+Neo4j
+MongoDB
+Mono Android / Apple 
+Andoid
+CAKE PHP
+Asp MVC
+Hadoop Hive Hbase Pig and so also 
+Spark 
+Scala
+Google App Engine
+Java Advance 7 Generics,Collections,Threads,AsyncThreads,Lamda,DataContext Learn All
+Mingw32
+CYgwin
+Nutch
+JsLinux
+Node.JS
+Erlang 
+Java Beans,Jstl,Maven,Ant
+Hive,Hbase,Pig,Sqoop,Ambari,HUE,Cassindra More
+Javascript Frameworks
+Facebook Php , Interpreter, Varigant
+Apache Codarva
+Node.js
+Phython
+Perl
+Ruby
+Statistical Language - 
+R Staistical Language
+Elastic Search - Search Engine
+BeagleBone
+

@@ -1,0 +1,20 @@
+Neo4j
+MongoDB
+Mono Android / Apple 
+Andoid
+CAKE PHP
+Asp MVC
+Hadoop
+Google App Engine
+Java Advance 7 Generics,Collections,Threads,AsyncThreads,Lamda,DataContext Learn All
+Mingw32
+CYgwin
+Nutch
+JsLinux
+Node.JS
+Erlang 
+Java Beans
+Hive
+Maven
+Boostarp
+Angular.Js
