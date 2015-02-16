@@ -1,14 +1,30 @@
 Azure
-Modulus.io
-Appfog
-Heroku
-Mongolab
-Bower
-Dropper
+Amazon Cloud
+Bitnami -Install cloud applications in a single click
+Crowflower - Crowdsourcing and data enrichment platform
+Digital Ocean-  Simple cloud hosting, built for developers
+DNSimple - Simple DNS management with one-click services and a robust API
+HackHands - Live programming help available 24/7
+NameCheap - Dns Name
+Orchestrate - A complete database portfolio that includes search, time-series events, geolocation and graph queries through an API
+Send Grid - EMail Infrastructure as Cloud
+Strip - Mobile and Web Payment Gateways
+Travis CL - Continuous Integration platform for Open Source
+Unreal Engine - A complete suite of game development tools for PC, console, mobile, web and VR
+Modulus.io - Node.js And Mongo
+Appfog - Simple Platform as a Service
+Heroku - Free Hosting
+Mongolab - Free MongoDb Instance
+Bower - Package Manager Node.js
+Composr - Package Manager Php
+Gem - Rail Package Manager
+Dropper - Free SSH
 NPM
 Package
 Composer
-Appcoda
+
+
+Appcoda  - IOS
 tympanus.net
 sitepoint.com
 http://mashable.com/
